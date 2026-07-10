@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temporal Structures — Yizhang Mu</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="left">Columbia GSAPP</div>
+    <div class="center">
+      Computational Design Workflows<br>
+      <span>Exploration of Digital Objects</span>
+    </div>
+    <div class="right">Yizhang Mu · he/him</div>
+  </header>
+
+  <main>
+    <section class="project-intro">
+      <div class="project-meta">2026 · DIGITAL OBJECT 2</div>
+      <h1 class="project-title">Temporal<br><span>Structures</span></h1>
+      <div class="project-subtitle">Yizhang Mu · Columbia University GSAPP</div>
+      <div class="advisor">D3.js studies in scales, events, concurrent durations, CSV loading, and calendar-based temporal patterns.</div>
+    </section>
+
+    <section class="overview">
+      <div class="section-index">00</div>
+      <div>
+        <div class="section-title">Digital Object 2: Temporal Structures</div>
+        <p>This website preserves the complete original exercise structure. Five D3 canvases move from foundational axes to event timelines, concurrent programs, an externally loaded CSV timeline, and an advanced calendar heatmap. All five canvases now use one unified visual system: consistent margins, typography, line weight, animation, tooltip behavior, and color logic.</p>
+      </div>
+    </section>
+
+    <section class="visual-section">
+      <div class="section-index">01</div>
+      <div class="section-content">
+        <div class="section-title">D3.js Foundation: Basic Setup and Axes</div>
+        <p>A foundational diagram demonstrating SVG creation, linear scales, axes, labels, margins, and the coordinate system that supports every later visualization.</p>
+        <div id="d3-container-0" class="d3-canvas"></div>
+      </div>
+    </section>
+
+    <section class="visual-section">
+      <div class="section-index">02</div>
+      <div class="section-content">
+        <div class="section-title">Event Timeline: Extreme Weather Signals</div>
+        <p>An event-based timeline using temporal position, color, scale, hover interaction, and tooltips to reveal the rhythm and severity of major climate events.</p>
+        <div id="d3-container-1" class="d3-canvas"></div>
+      </div>
+    </section>
+
+    <section class="visual-section">
+      <div class="section-index">03</div>
+      <div class="section-content">
+        <div class="section-title">Concurrent Events: Community Programs</div>
+        <p>A Gantt-style visualization showing overlapping community initiatives. Duration, category, progress, and concurrency are visible within a single shared time structure.</p>
+        <div id="d3-container-2" class="d3-canvas"></div>
+      </div>
+    </section>
+
+    <section class="visual-section featured">
+      <div class="section-index">04</div>
+      <div class="section-content">
+        <div class="section-title">CSV Timeline: Urban Climate Adaptation</div>
+        <p>The original 15-record CSV-driven Gantt example now uses a different background dataset: the historical development of urban environmental adaptation. The CSV format remains exactly <code>name,start,end,category</code>.</p>
+
+        <div class="note-grid">
+          <div class="important-note">
+            <strong>Run through a local server</strong>
+            <p>Use VS Code Live Server because browsers restrict local CSV loading when an HTML file is opened directly.</p>
+          </div>
+          <div class="csv-modification">
+            <strong>CSV structure preserved</strong>
+            <p><code>name,start,end,category</code><br>Only the records and visual interpretation have changed.</p>
+          </div>
+        </div>
+
+        <div id="d3-container-3" class="d3-canvas"></div>
+      </div>
+    </section>
+
+    <section class="visual-section featured">
+      <div class="section-index">05</div>
+      <div class="section-content">
+        <div class="section-title">Advanced D3 Study: Urban Heat Calendar</div>
+        <p>A second temporal visualization preserves all 754 original daily records across 2021–2023 and replaces only their values with a synthetic urban heat-stress dataset. Every cell represents one weekday; near-baseline days recede into a neutral paper tone while genuine anomalies carry the color — cool violet below the baseline, lime rising to orange under extreme heat.</p>
+        <div id="d3-container-4" class="d3-canvas heatmap-canvas"></div>
+      </div>
+    </section>
+
+    <footer>
+      <span>Yizhang Mu</span>
+      <span>Columbia GSAPP · CDP</span>
+      <span>D3.js Temporal Structures · 2026</span>
+    </footer>
+  </main>
+
+  <!-- Preserve all five original scripts and canvases -->
+  <script src="d3-testing.js"></script>
+  <script src="events-simple.js"></script>
+  <script src="concurrent-events.js"></script>
+  <script src="concurrent-events-cvs.js"></script>
+  <script src="calendar-heatmap.js"></script>
+</body>
+</html>
